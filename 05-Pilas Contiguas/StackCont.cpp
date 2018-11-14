@@ -1,6 +1,6 @@
-#include "StackCont.h"
-
 #include<iostream>
+
+#include "Stack.h"
 
 Pila& vaciar(Pila& stack){
 	if(!isEmpty(stack)){
@@ -45,3 +45,13 @@ void impresion(const Pila& stack){
 	std::cout<<"\nimpresión finalizada."<<std::endl;
 }
 
+int top(const Pila& stack){
+	if(isEmpty(stack)){
+		std::cout<<"Pila vacía, cantidad de elementos dentro de la pila: ";
+		return 0;}
+	else{
+		std::cout<<"Cima de la pila: ";
+		return stack.top[stack.contador-1];
+	}
+
+}

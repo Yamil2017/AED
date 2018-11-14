@@ -1,5 +1,5 @@
-#ifndef STACKCONT_H
-#define STACKCONT_H
+#ifndef STACK_H
+#define STACK_H
 
 struct Pila{
 	Pila(int);
@@ -11,7 +11,7 @@ Pila& push(Pila&,int);
 bool isEmpty(const Pila&);
 void impresion(const Pila&);
 Pila& vaciar(Pila&);
-
+int top(const Pila&);
 
 
 #endif
