@@ -1,4 +1,4 @@
-#include"Queue.h"
+/*#include"Queue.h"
 #include<random>
 #include<ctime>
 
@@ -23,4 +23,4 @@ int main(){
 
 	return 0;
 
-}
+}*/

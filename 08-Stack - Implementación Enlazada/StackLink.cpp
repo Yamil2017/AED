@@ -5,11 +5,16 @@ Eslabon::Eslabon():dato{},siguiente{nullptr}{}
 
 Pila::Pila():top{nullptr}{}
 
-Pila& pop(Pila& stack){
+Pila& pop(Pila& stack,int& a){
 	if(isEmpty(stack))
 		std::cout<<"Pila vacía"<<std::endl;
-	else
+	else{
+		Eslabon*aux=new Eslabon;
+		aux=stack.top;
+		a=stack.top->dato;
 		stack.top=stack.top->siguiente;
+		delete aux;
+	}
 	return stack;
 }
 
@@ -26,10 +31,11 @@ bool isEmpty(const Pila& stack){
 }
 
 Pila& vaciar(Pila& stack){
+	int a;
 	if(isEmpty(stack))
 		std::cout<<"Pila vacia"<<std::endl;
 	else{
-		pop(stack);
+		pop(stack,a);
 		vaciar(stack);
 	}
 	return stack;

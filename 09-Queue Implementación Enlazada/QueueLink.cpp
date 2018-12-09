@@ -16,7 +16,7 @@ Cola& enqueue(Cola& queue,int valor){
 		queue.fin->siguiente=nuevoEslabon;
 		queue.fin=nuevoEslabon;
 	}
-	std::cout<<"El valor "<<queue.fin->dato<<" se ha ingresado a la cola"<<std::endl;
+	//std::cout<<"El valor "<<queue.fin->dato<<" se ha ingresado a la cola"<<std::endl;
 	return queue;
 }
 
@@ -33,24 +33,26 @@ void print(const Cola& queue){
 	std::cout<<"\nFin de la impresión"<<std::endl;
 }
 
-Cola& dequeue(Cola& queue){
+Cola& dequeue(Cola& queue,int& a){
 	Eslabon*aux=queue.frente;
+	a=queue.frente->dato;
 	if(queue.frente->siguiente==nullptr||isEmpty(queue)){
 		queue.frente=nullptr;
 		queue.fin=queue.frente;
-		std::cout<<"Elemento "<<aux->dato<<" eliminado."<<std::endl;
-		std::cout<<"Cola vacía."<<std::endl;
+		//std::cout<<"Elemento "<<aux->dato<<" eliminado."<<std::endl;
+		//std::cout<<"Cola vacía."<<std::endl;
 	}else{
 		queue.frente=queue.frente->siguiente;
-		std::cout<<"Elemento "<<aux->dato<<" eliminado."<<std::endl;
+		//std::cout<<"Elemento "<<aux->dato<<" eliminado."<<std::endl;
 	}
 	delete aux;
 	return queue;
 }
 
 Cola& vaciar(Cola& queue){
+	int a{};
 	if(!isEmpty(queue)){
-		dequeue(queue);
+		dequeue(queue,a);
 		vaciar(queue);
 	}
 	return queue;

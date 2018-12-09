@@ -13,7 +13,7 @@ struct Pila{
 };
 void print(const Pila&);
 bool isEmpty(const Pila&);
-Pila& pop(Pila&);
+Pila& pop(Pila&,int&);
 Pila& push(Pila&,int);
 Pila& vaciar(Pila&);
 #endif

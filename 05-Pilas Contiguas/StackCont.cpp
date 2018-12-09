@@ -21,7 +21,7 @@ bool isEmpty(const Pila& stack){
 
 Pila& pop(Pila& stack){
 	if(stack.contador>=1){
-		std::cout<<"Elemento "<<stack.top[stack.contador-1]<<" eliminado"<<std::endl;
+		//std::cout<<"Elemento "<<stack.top[stack.contador-1]<<" eliminado"<<std::endl;
 		stack.contador--;
 	}
 	else
@@ -33,7 +33,7 @@ Pila& push(Pila& stack,int valor){
 	if(stack.contador<stack.TAMANIO){
 		stack.top[stack.contador]=valor;
 		stack.contador++;
-		std::cout<<"El elemento "<<valor<<" ha sido ingresado."<<std::endl;
+		//std::cout<<"El elemento "<<valor<<" ha sido ingresado."<<std::endl;
 	}else
 		std::cout<<"Pila completa\n";
 	return stack;
@@ -47,10 +47,11 @@ void impresion(const Pila& stack){
 
 int top(const Pila& stack){
 	if(isEmpty(stack)){
-		std::cout<<"Pila vacía, cantidad de elementos dentro de la pila: ";
-		return 0;}
+		//std::cout<<"Pila vacía, cantidad de elementos dentro de la pila: ";
+		return 0;
+		return stack.top[stack.contador-1];}
 	else{
-		std::cout<<"Cima de la pila: ";
+		//std::cout<<"Cima de la pila: ";
 		return stack.top[stack.contador-1];
 	}
 

@@ -1,1 +1,1 @@
-﻿![](https://github.com/Yamil2017/AED/blob/master/images/SecDinContEspecificacion.jpg)
+﻿![](https://github.com/Yamil2017/AED/blob/master/images/SecDinLinkEspecificacion.jpg)

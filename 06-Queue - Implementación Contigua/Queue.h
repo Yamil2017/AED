@@ -15,7 +15,7 @@ struct Cola{
 
 bool isEmpty(const Cola&);
 Cola& enqueue(Cola&,const int);
-Cola& dequeue(Cola&);
+Cola& dequeue(Cola&,int&);
 void impresion(const Cola&);
 Cola& vaciar(Cola&);
 

@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 #include "SecDin.h"
 
 int main(){
@@ -23,4 +23,4 @@ int main(){
 
 
 	return 0;
-}
+}*/

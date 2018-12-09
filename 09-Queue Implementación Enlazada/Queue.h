@@ -13,7 +13,7 @@ struct Cola{
 };
 
 Cola& enqueue(Cola&, int);
-Cola& dequeue(Cola&);
+Cola& dequeue(Cola&,int&);
 void print(const Cola&);
 bool isEmpty(const Cola&);
 Cola& vaciar(Cola&);

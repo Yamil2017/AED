@@ -4,7 +4,7 @@
 #include<ctime>
 #include<iostream>
 
-
+/*
 int main(){
 	srand(time(0));
 	Pila nueva(5);
@@ -22,4 +22,7 @@ int main(){
 	vaciar(nueva);
 	std::cout<<top(nueva)<<'\n';
 	impresion(nueva);
+
+	return 0;
 }
+*/
