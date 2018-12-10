@@ -1,2 +1,2 @@
 ﻿
-![](https://github.com/Yamil2017/AED/blob/master/images/QueueContEspecificacion.jpg)
+![](https://github.com/Yamil2017/AED/blob/master/images/QueueEspecificacion.jpg)
